@@ -1,3 +1,6 @@
+// cambios generales, mobile first //
+@import "../abstract/mixins";
+
 footer {
     background-color: $why-choose-us-bg;
     color: $blanco;
@@ -74,7 +77,7 @@ footer {
         p {
            padding: 30px 80px 10px 80px;
         }
-    }
+    } // empieza media query //
     @media (min-width: 576px) {
         .footer-contenido {
             padding: 60px 80px 0;
@@ -101,14 +104,11 @@ footer {
         .cuarta-parte {
             flex: 0 0 50%;
          }
-         } //falta hacer para desktop 992
+         } 
     //achicar los tamaños
     //sacar los bordes blancos de la pagina y centrar el footer
     }
-        //hacer display block a cada parte del footer, eso es lo que lo rompe
-        //max-width al contenido de 1140px (desktop) para 992 probar 700px
         //centrar todo, buscar porque no funciona el justify center ni align items
-        //sacar el padding que lo esta centrando para que todas las partes tengan espacio 
         @media (min-width: 992px) {
             .footer-contenido {
                max-width: 960px;
@@ -116,35 +116,25 @@ footer {
                padding: 35px;
                margin: 0;
                .primera-parte {
-                display: block;
-                width: 100px;
-                max-width: 300px;
-                padding-right: 15px;
+                @include footer-media-992 ($max-width: 300px); /////aqui hay algo mal///
                 p {
                     padding-right: 0;
                 }
             }
             .segunda-parte {
-                display: block;
-                max-width: 200px;
-                padding-right: 15px;
+                @include footer-media-992;
             }
             .tercera-parte {
-                display: block; 
-                max-width: 200px;
-                padding-right: 15px;
+                @include footer-media-992;
             }
             .cuarta-parte {
-                display: block;
-                max-width: 200px;
-                padding-right: 15px;
+                @include footer-media-992;
              }
              }
              .parte-final {
                      display: flex;
                      justify-content: center;
                  }
-            }
-            }
-        
+                }
+            }  
     
