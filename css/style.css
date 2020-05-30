@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .contact-us {
   overflow: hidden;
-  padding: 60px 0;
+  padding: 20px 0;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1); }
   .contact-us h3 {
     font-family: “Montserrat”, sans-serif;
@@ -86,6 +86,9 @@
           display: flex; }
           .contact-us .contenido .seccion-2 form .form-row input {
             margin-right: 8px; } }
+  @media (min-width: 1040px) {
+    .contact-us {
+      padding: 0; } }
 
 footer {
   background-color: #004a99;
@@ -142,9 +145,6 @@ footer {
     footer .parte-final p {
       padding: 30px 80px 10px 80px; }
   @media (min-width: 576px) {
-    footer .footer-contenido {
-      padding: 60px 80px 0; } }
-  @media (min-width: 768px) {
     footer .footer-contenido {
       display: flex;
       flex-wrap: wrap;

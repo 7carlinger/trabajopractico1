@@ -1,122 +1,126 @@
 // cambios generales, mobile first //
+
 .contact-us {
     overflow: hidden;
-    padding: 60px 0;
+    padding: 20px 0;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-   h3 {
-    font-family: $titulos;
-    display: flex;
-    justify-content: center;
-    color: $texto-gris;
-    font-size: 36px;
-    font-weight: 500;
-    margin: 50px;
-    letter-spacing: 1px;
-   }
-   .contenido {
-       margin: 5px;
-       .seccion-1 {
-           margin-bottom: 20px;
-        #mapframe {
-            width: 100%;
-            height: 300px;
-        }
-       }
-       .seccion-2 {
-        .icons-info {
-            .info {
-                display: flex;
-                align-items: center;
-                margin-bottom: 20px;
-                .icon {
-                    font-size: 25px;
-                    padding-right: 5px;
-                    color: blue;
-                }
-                p {
-                    font-family: $parrafos;
-                }
-            }
-        }
-        form {
-            input {
-            display: inline-block;
-            width: 95%;
-            height: 30px;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ced4da;
-            &:focus {
-            outline-color: $celeste-mas-claro;
-            }
-        }
-         textarea {
-            font-family: $parrafos;
-            width: 95%;
-            padding: 10px;
-            height: 100px;
-            border: 1px solid #ced4da;
-            &:focus {
-               outline-color: $celeste-mas-claro;
-            }
-        }
-    }
-    .boton {
+    h3 {
+        font-family: $titulos;
         display: flex;
         justify-content: center;
-        margin: 10px 0 50px;
-            button {
-               border: none;
-               width: 180px;
-               height: 40px;
-               border-radius: 25px;
-               color: $blanco;
-               font-size: large;
-               background-color: $celeste;
-            }
-        }
+        color: $texto-gris;
+        font-size: 36px;
+        font-weight: 500;
+        margin: 50px;
+        letter-spacing: 1px;
     }
-}
-@media (min-width: 768px) {
-    .icons-info {
-        display: flex;
-        justify-content: space-between;
-      .info {
-          margin: 20px;
-      }
-    }
-}
-@media (min-width: 992px) {
     .contenido {
-        display: flex;
-        flex-wrap: wrap;
-        .seccion-1{
-            flex: 0 0 50%;
-            max-width: 45%;
-            padding: 18px;
+        margin: 5px;
+        .seccion-1 {
+            margin-bottom: 20px;
             #mapframe {
-                height: 350px;
+                width: 100%;
+                height: 300px;
             }
         }
         .seccion-2 {
-            flex: 0 0 60%;
-            max-width: 50%;
-            padding: 5px;
-            .info {
-                margin: 0 10px 20px;
-                .icon {
-                    font-size: 32px;
-                }
-            }
-            form { 
-                .form-row { //este queda mas largo que los demas
+            .icons-info {
+                .info {
                     display: flex;
-                    input {
-                        margin-right: 8px;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    .icon {
+                        font-size: 25px;
+                        padding-right: 5px;
+                        color: blue;
+                    }
+                    p {
+                        font-family: $parrafos;
                     }
                 }
             }
+            form {
+                input {
+                    display: inline-block;
+                    width: 95%;
+                    height: 30px;
+                    padding: 10px;
+                    margin-bottom: 15px;
+                    border: 1px solid #ced4da;
+                    &:focus {
+                    outline-color: $celeste-mas-claro;
+                    }
+                }
+                textarea {
+                    font-family: $parrafos;
+                    width: 95%;
+                    padding: 10px;
+                    height: 100px;
+                    border: 1px solid #ced4da;
+                    &:focus {
+                        outline-color: $celeste-mas-claro;
+                    }
+                }
+            }
+            .boton {
+                display: flex;
+                justify-content: center;
+                margin: 10px 0 50px;
+                button {
+                    border: none;
+                    width: 180px;
+                    height: 40px;
+                    border-radius: 25px;
+                    color: $blanco;
+                    font-size: large;
+                    background-color: $celeste;
+                }
+            }
+        }
     }
-}
-}
+    @media (min-width: 768px) {
+        .icons-info {
+            display: flex;
+            justify-content: space-between;
+            .info {
+                margin: 20px;
+            }
+        }
+    }
+    @media (min-width: 992px) {
+        .contenido {
+            display: flex;
+            flex-wrap: wrap;
+            .seccion-1 {
+                flex: 0 0 50%;
+                max-width: 45%;
+                padding: 18px;
+                #mapframe {
+                    height: 350px;
+                }
+            }
+            .seccion-2 {
+                flex: 0 0 60%;
+                max-width: 50%;
+                padding: 5px;
+                .info {
+                    margin: 0 10px 20px;
+                    .icon {
+                        font-size: 32px;
+                    }
+                }
+                form {
+                    .form-row {
+                        display: flex;
+                        input {
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1040px) {
+        padding: 0;
+    }
 }

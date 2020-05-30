@@ -23,7 +23,7 @@ footer {
             font-size: xx-large;
         }
     }
-    .segunda-parte {  
+    .segunda-parte {
         .links-page {
             a {
                 display: flex;
@@ -36,11 +36,10 @@ footer {
     }
     .tercera-parte {
         p {
-            margin: 10px 0 10px;
-        } 
+            margin: 10px 0 10px; 
+        }
         .logo-redsocial {
             margin: 25px 0 25px;
-            
             .logo {
                 text-align: center;
                 font-size: 19px;
@@ -53,95 +52,87 @@ footer {
                 width: 35px;
                 background-color: $celeste;
                 color: $blanco;
+
             }
         }
     }
     .cuarta-parte {
         form {
             display: flex;
-        input {
-            width: 90%;
-            height: 25px;
+            input {
+                width: 90%;
+                height: 25px;
+            }
+            button {
+                width: 200px;
+                border: none;
+                background-color: $celeste;
+                color: $blanco;
+            }
         }
-        button {
-            width: 200px;
-            border: none;
-            background-color: $celeste;
-            color: $blanco;
-        }
-     }
     }
     .parte-final {
         height: 100px;
         background-color: $azul;
         p {
-           padding: 30px 80px 10px 80px;
-        }
-    } // empieza media query //
-    @media (min-width: 576px) {
-        .footer-contenido {
-            padding: 60px 80px 0;
+            padding: 30px 80px 10px 80px; 
         }
     }
-    @media (min-width: 768px) {
+    @media (min-width: 576px) {
         .footer-contenido {
             display: flex;
             flex-wrap: wrap;
             max-width: 750px;
             margin-left: 55px;
-        .primera-parte {
-            flex: 0 0 50%;
-            p {
-                padding-right: 15px;
-            }
-        }
-        .segunda-parte {
-            flex: 0 0 50%;
-        }
-        .tercera-parte {
-            flex: 0 0 50%;
-        }
-        .cuarta-parte {
-            flex: 0 0 50%;
-         }
-         } 
-    //achicar los tamaños
-    //sacar los bordes blancos de la pagina y centrar el footer
-    }
-        //centrar todo, buscar porque no funciona el justify center ni align items 
-        @media (min-width: 992px) {
-            .footer-contenido {
-               max-width: 960px;
-               flex-wrap: nowrap;
-               padding: 15px;
-               margin: 0;
-               .primera-parte {
-                @include footer-media-992 ($max-width: 300px); // problema
+            .primera-parte {
+                flex: 0 0 50%;
                 p {
-                    padding-right: 0;
+                    padding-right: 15px; 
                 }
             }
             .segunda-parte {
-                @include footer-media-992 ($max-width:200px);
+                flex: 0 0 50%;
             }
             .tercera-parte {
-                @include footer-media-992 ($max-width:200px);
+                flex: 0 0 50%;
             }
             .cuarta-parte {
-                @include footer-media-992 ($max-width:200px);
-             }
-             }
-             .parte-final {
-                     display: flex;
-                     justify-content: center;
-                 }
+                flex: 0 0 50%;
+            }
+        }
+    }
+    @media (min-width: 992px) {
+        .footer-contenido {
+                max-width: 960px;
+                flex-wrap: nowrap;
+                padding: 15px;
+                margin: 0;
+                .primera-parte {
+                    @include footer-media-992 ($max-width: 300px);
+                    p {
+                        padding-right: 0; 
+                    } 
                 }
-                @media (min-width: 1040px) {
-                    font-size: 14px;
-                    .footer-contenido {
-                        max-width: none;
-                        justify-content: center;
-                    }
+                .segunda-parte {
+                    @include footer-media-992 ($max-width:200px);
                 }
-            }  
-    
+                .tercera-parte {
+                    @include footer-media-992 ($max-width:200px);
+                }
+                .cuarta-parte {
+                    @include footer-media-992 ($max-width:200px);
+            }
+        }
+        .parte-final {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    @media (min-width: 1040px) {
+        font-size: 14px; 
+        .footer-contenido {
+            max-width: none;
+            justify-content: center;
+        }
+    }
+}
