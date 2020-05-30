@@ -36,7 +36,7 @@ footer {
     }
     .tercera-parte {
         p {
-            margin: 10px s0 10px;
+            margin: 10px 0 10px;
         } 
         .logo-redsocial {
             margin: 25px 0 25px;
@@ -108,33 +108,40 @@ footer {
     //achicar los tamaños
     //sacar los bordes blancos de la pagina y centrar el footer
     }
-        //centrar todo, buscar porque no funciona el justify center ni align items
+        //centrar todo, buscar porque no funciona el justify center ni align items 
         @media (min-width: 992px) {
             .footer-contenido {
                max-width: 960px;
                flex-wrap: nowrap;
-               padding: 35px;
+               padding: 15px;
                margin: 0;
                .primera-parte {
-                @include footer-media-992 ($max-width: 300px); /////aqui hay algo mal///
+                @include footer-media-992 ($max-width: 300px); // problema
                 p {
                     padding-right: 0;
                 }
             }
             .segunda-parte {
-                @include footer-media-992;
+                @include footer-media-992 ($max-width:200px);
             }
             .tercera-parte {
-                @include footer-media-992;
+                @include footer-media-992 ($max-width:200px);
             }
             .cuarta-parte {
-                @include footer-media-992;
+                @include footer-media-992 ($max-width:200px);
              }
              }
              .parte-final {
                      display: flex;
                      justify-content: center;
                  }
+                }
+                @media (min-width: 1040px) {
+                    font-size: 14px;
+                    .footer-contenido {
+                        max-width: none;
+                        justify-content: center;
+                    }
                 }
             }  
     

@@ -1,6 +1,8 @@
 @charset "UTF-8";
 .contact-us {
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 60px 0;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1); }
   .contact-us h3 {
     font-family: “Montserrat”, sans-serif;
     display: flex;
@@ -23,7 +25,8 @@
       margin-bottom: 20px; }
       .contact-us .contenido .seccion-2 .icons-info .info .icon {
         font-size: 25px;
-        padding-right: 5px; }
+        padding-right: 5px;
+        color: blue; }
       .contact-us .contenido .seccion-2 .icons-info .info p {
         font-family: “Open Sans”, sans-serif; }
     .contact-us .contenido .seccion-2 form input {
@@ -108,7 +111,7 @@ footer {
     color: #FFF;
     margin: 20px 0 30px; }
   footer .tercera-parte p {
-    margin: 10px s0 10px; }
+    margin: 10px 0 10px; }
   footer .tercera-parte .logo-redsocial {
     margin: 25px 0 25px; }
     footer .tercera-parte .logo-redsocial .logo {
@@ -161,27 +164,32 @@ footer {
     footer .footer-contenido {
       max-width: 960px;
       flex-wrap: nowrap;
-      padding: 35px;
+      padding: 15px;
       margin: 0; }
       footer .footer-contenido .primera-parte {
         display: block;
-        width: 100px;
         max-width: 300px;
-        padding-right: 15px; }
+        padding-right: 20px; }
         footer .footer-contenido .primera-parte p {
           padding-right: 0; }
       footer .footer-contenido .segunda-parte {
         display: block;
         max-width: 200px;
-        padding-right: 15px; }
+        padding-right: 20px; }
       footer .footer-contenido .tercera-parte {
         display: block;
         max-width: 200px;
-        padding-right: 15px; }
+        padding-right: 20px; }
       footer .footer-contenido .cuarta-parte {
         display: block;
         max-width: 200px;
-        padding-right: 15px; }
+        padding-right: 20px; }
     footer .parte-final {
       display: flex;
       justify-content: center; } }
+  @media (min-width: 1040px) {
+    footer {
+      font-size: 14px; }
+      footer .footer-contenido {
+        max-width: none;
+        justify-content: center; } }
