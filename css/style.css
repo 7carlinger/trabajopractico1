@@ -144,6 +144,13 @@ footer {
     background-color: #004289; }
     footer .parte-final p {
       padding: 30px 80px 10px 80px; }
+  footer .chebron {
+    position: fixed;
+    right: 50px;
+    bottom: 50px; }
+    footer .chebron .fa-chevron-circle-up {
+      color: #007bff;
+      font-size: 50px; }
   @media (min-width: 576px) {
     footer .footer-contenido {
       display: flex;
@@ -186,7 +193,9 @@ footer {
         padding-right: 20px; }
     footer .parte-final {
       display: flex;
-      justify-content: center; } }
+      justify-content: center; }
+    footer .chebron {
+      bottom: 200px; } }
   @media (min-width: 1040px) {
     footer {
       font-size: 14px; }

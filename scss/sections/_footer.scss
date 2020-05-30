@@ -78,6 +78,15 @@ footer {
             padding: 30px 80px 10px 80px; 
         }
     }
+    .chebron {
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+        .fa-chevron-circle-up {
+            color: $celeste;
+            font-size: 50px;
+        }
+    }
     @media (min-width: 576px) {
         .footer-contenido {
             display: flex;
@@ -126,6 +135,9 @@ footer {
         .parte-final {
             display: flex;
             justify-content: center;
+        }
+        .chebron {
+            bottom: 200px;
         }
     }
     @media (min-width: 1040px) {
