@@ -14,7 +14,7 @@ footer {
         margin: 30px 0 30px;
     }
     .footer-contenido {
-        padding: 60px 20px 0;
+        padding: 60px $size-repeat 0;
     }
     .primera-parte {
         h2 {
@@ -30,7 +30,7 @@ footer {
                 flex-direction: column;
                 text-decoration: none;
                 color: $blanco;
-                margin: 20px 0 30px;
+                margin: $size-repeat 0 30px;
             }
         }
     }
@@ -94,19 +94,19 @@ footer {
             max-width: 750px;
             margin-left: 55px;
             .primera-parte {
-                flex: 0 0 50%;
+                flex: $flex-position-repeat;
                 p {
                     padding-right: 15px; 
                 }
             }
             .segunda-parte {
-                flex: 0 0 50%;
+                flex: $flex-position-repeat;
             }
             .tercera-parte {
-                flex: 0 0 50%;
+                flex: $flex-position-repeat;
             }
             .cuarta-parte {
-                flex: 0 0 50%;
+                flex: $flex-position-repeat;
             }
         }
     }
@@ -137,7 +137,7 @@ footer {
             justify-content: center;
         }
         .chebron {
-            bottom: 200px;
+            bottom: 225px;
         }
     }
     @media (min-width: 1040px) {

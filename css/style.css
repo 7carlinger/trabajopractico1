@@ -34,7 +34,7 @@
       width: 95%;
       height: 30px;
       padding: 10px;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       border: 1px solid #ced4da; }
       .contact-us .contenido .seccion-2 form input:focus {
         outline-color: #74b5fc; }
@@ -51,6 +51,7 @@
       justify-content: center;
       margin: 10px 0 50px; }
       .contact-us .contenido .seccion-2 .boton button {
+        cursor: pointer;
         border: none;
         width: 180px;
         height: 40px;
@@ -75,7 +76,7 @@
         .contact-us .contenido .seccion-1 #mapframe {
           height: 350px; }
       .contact-us .contenido .seccion-2 {
-        flex: 0 0 60%;
+        flex: 0 0 50%;
         max-width: 50%;
         padding: 5px; }
         .contact-us .contenido .seccion-2 .info {
@@ -85,10 +86,30 @@
         .contact-us .contenido .seccion-2 form .form-row {
           display: flex; }
           .contact-us .contenido .seccion-2 form .form-row input {
-            margin-right: 8px; } }
+            margin-right: 8px; }
+        .contact-us .contenido .seccion-2 .boton button:hover {
+          transition: 0.3s ease-in-out;
+          background-color: #004289; } }
   @media (min-width: 1040px) {
     .contact-us {
-      padding: 0; } }
+      padding: 0; }
+      .contact-us h3 {
+        font-size: 30px; }
+      .contact-us .contenido .seccion-1 {
+        padding: 15px; }
+        .contact-us .contenido .seccion-1 #mapframe {
+          height: 200px; }
+      .contact-us .contenido .seccion-2 .icons-info .info p {
+        margin-top: 0; }
+      .contact-us .contenido .seccion-2 form input {
+        width: 98%;
+        height: 10px; }
+      .contact-us .contenido .seccion-2 form textarea {
+        width: 98%; }
+      .contact-us .contenido .seccion-2 .boton button {
+        width: 150px;
+        height: 30px;
+        font-size: small; } }
 
 footer {
   background-color: #004a99;
@@ -195,7 +216,7 @@ footer {
       display: flex;
       justify-content: center; }
     footer .chebron {
-      bottom: 200px; } }
+      bottom: 225px; } }
   @media (min-width: 1040px) {
     footer {
       font-size: 14px; }
