@@ -1,0 +1,145 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+
+#about {
+    padding: 60px 0 60px 0;
+    overflow: hidden;
+    .container {
+        overflow: hidden;
+        padding: 0 15px 0 15px;
+        margin-left: auto;
+        margin-right: auto;
+        .section-header {
+            @include header-loli;
+            h3 {
+                font-size: 36px;
+                font-family: "Montserrat", sans-serif;
+                color: #283d50;
+                margin-bottom: 25px;
+                font-weight: 500;
+            }
+            p {
+                font-size: 15px;
+                font-family: "Open Sans", sans-serif;
+                color: #556877;
+                margin: auto;
+                padding: 0 0 60px;
+                line-height: 23px;
+            }
+        }
+        .about-container {
+            background-color: #fff;
+            @include display-flex(center, center, column);
+            .img-about {
+                box-sizing: border-box;
+                img {
+                    width: 100%;
+                }
+            }
+            .img-desktop {
+                display: none;
+                box-sizing: border-box;
+                img {
+                    width: 100%;
+                }
+            }
+            .description {
+                p {
+                    font-size: 16px;
+                    font-family: "Open sans", sans-serif;
+                    color: #444444;
+                    line-height: 25px;
+                    margin-bottom: 40px;
+                }
+            }
+            .title-icons:hover .icon {
+                background-color: #007bff;
+            }
+            .title-icons:hover .icon i {
+                color: #fff;
+            }
+            .title-icons {
+                background-color: #fff;
+                display: flex;
+            }
+            .icon {
+                @include display-flex(center, center, column);
+                width: 84px;
+                height: 84px;
+                border-radius: 50%;
+                border: 2px solid #007bff;
+                font-size: 35px;
+                color: #007bff;
+                overflow: hidden;
+                transition: all 0.2s ease-in-out;
+            }
+            .text-about {
+                display: flex;
+                flex-direction: column;
+                margin-left: 15px;
+                .title {
+                    margin: 0;
+                    text-decoration: none;
+                    a:link,
+                    a:visited,
+                    a:active {
+                        text-decoration: none;
+                        font-size: 20px;
+                        color: #283d50;
+                        font-family: "Montserrat", sans-serif;
+                    }
+                    p.description {
+                        margin: -16;
+                        line-height: 26px;
+                        color: #444444;
+                        font-size: 16px;
+                        font-family: "Open sans", sans-serif;
+                    }
+                }
+            }
+        }
+    }
+    .about-extra {
+        
+        margin-top: 60px;
+        .img-about {
+            margin: 0 15px 0 15px;
+            box-sizing: border-box;
+            
+            img {
+                
+                width: 100%;
+               
+            }
+        }
+        h4 {
+            color: #444444;
+            font-size: 24px;
+            font-family: "Montserrat", sans-serif;
+            margin-bottom: 20px;
+        }
+        
+        .container-extra {
+            margin: 40px 15px 0 15px;
+            align-items: flex-start;
+            h4 {
+                color: #444444;
+                font-size: 24px;
+                font-family: "Montserrat", sans-serif;
+                margin: 15px 0 20px;
+            }
+            p {
+                color: #444444;
+                font-size: 16px;
+                font-family: "Open Sans", sans-serif;
+                margin: 0 0 30px;
+                line-height: 24px;
+            }
+            :nth-child(3){
+                margin: 0;
+            }
+        }
+    }
+}
+
