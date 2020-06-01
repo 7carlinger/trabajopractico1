@@ -156,7 +156,7 @@ footer {
       width: 90%;
       height: 25px; }
     footer .cuarta-parte form button {
-      width: 200px;
+      width: 150px;
       border: none;
       background-color: #007bff;
       color: #FFF; }
@@ -216,10 +216,26 @@ footer {
       display: flex;
       justify-content: center; }
     footer .chebron {
-      bottom: 225px; } }
+      bottom: 350px; } }
   @media (min-width: 1040px) {
     footer {
       font-size: 14px; }
       footer .footer-contenido {
         max-width: none;
         justify-content: center; } }
+  @media (min-width: 1200px) {
+    footer .footer-contenido .primera-parte {
+      display: block;
+      max-width: 335px;
+      padding-right: 20px; }
+    footer .footer-contenido .tercera-parte {
+      display: block;
+      max-width: 270px;
+      padding-right: 20px; }
+    footer .footer-contenido .cuarta-parte {
+      display: block;
+      max-width: 240px;
+      padding-right: 20px; } }
+
+body {
+  margin: 0; }

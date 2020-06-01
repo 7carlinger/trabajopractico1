@@ -64,21 +64,21 @@ footer {
                 height: 25px;
             }
             button {
-                width: 200px;
+                width: 150px;
                 border: none;
                 background-color: $celeste;
                 color: $blanco;
             }
         }
     }
-    .parte-final {
+    .parte-final { //Parte copyright
         height: 100px;
         background-color: $azul;
         p {
             padding: 30px 80px 10px 80px; 
         }
     }
-    .chebron {
+    .chebron { 
         position: fixed;
         right: 50px;
         bottom: 50px;
@@ -117,19 +117,19 @@ footer {
                 padding: 15px;
                 margin: 0;
                 .primera-parte {
-                    @include footer-media-992 ($max-width: 300px);
+                    @include footer-media ($max-width: 300px);
                     p {
                         padding-right: 0; 
                     } 
                 }
                 .segunda-parte {
-                    @include footer-media-992 ($max-width:200px);
+                    @include footer-media ($max-width:200px);
                 }
                 .tercera-parte {
-                    @include footer-media-992 ($max-width:200px);
+                    @include footer-media ($max-width:200px);
                 }
                 .cuarta-parte {
-                    @include footer-media-992 ($max-width:200px);
+                    @include footer-media ($max-width:200px);
             }
         }
         .parte-final {
@@ -137,7 +137,7 @@ footer {
             justify-content: center;
         }
         .chebron {
-            bottom: 225px;
+            bottom: 350px;
         }
     }
     @media (min-width: 1040px) {
@@ -145,6 +145,19 @@ footer {
         .footer-contenido {
             max-width: none;
             justify-content: center;
+        }
+    }
+    @media (min-width: 1200px){
+        .footer-contenido {
+            .primera-parte {
+                @include footer-media ($max-width: 335px);
+            }
+            .tercera-parte {
+                @include footer-media ($max-width: 270px);
+            }
+            .cuarta-parte {
+                @include footer-media ($max-width: 240px);
+            }
         }
     }
 }
