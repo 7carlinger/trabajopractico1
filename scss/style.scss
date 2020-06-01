@@ -1,3 +1,14 @@
+<<<<<<< HEAD
 @import"../scss/sections/whyus";
 @import"../scss/sections/ourportfolio";
 @import"../scss/abstract/variables";
+=======
+@import "./abstract/variables";
+@import "./sections/contactus";
+@import "./sections/footer";
+@import "./abstract/mixins";
+
+body {
+    margin: 0;
+}
+>>>>>>> e0c0c3ce340276b31c1218695baa2db927469c12
