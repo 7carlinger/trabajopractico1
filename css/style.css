@@ -7,8 +7,6 @@
   background-color: #004a99;
   color: black;
   display: block;
-  justify-items: center;
-  align-items: center;
   margin: 0px;
   padding: 0px;
   width: 100%;
@@ -22,6 +20,11 @@
   width: 100%;
   height: auto;
   display: block; }
+
+#why-us .card .card-body i {
+  font-size: 48px;
+  padding-top: 15px;
+  color: #bfddfe; }
 
 #why-us h3 {
   text-align: center;
@@ -95,11 +98,6 @@
   padding-top: 15px;
   align-items: center;
   background-color: #0f3b69; }
-
-#why-us .card i {
-  font-size: 48px;
-  padding-top: 15px;
-  color: #bfddfe; }
 
 #why-us .contador span {
   font-weight: bold;
@@ -219,3 +217,5 @@
 img {
   max-width: 320px;
   max-height: 300px; }
+
+@impo;

@@ -1,18 +1,19 @@
 #why-us {
     padding: 30px 0;
-    background: #004a99;
+    background-color:$why-choose-us-bg;
     display: block;
 }
 #why-us .contenedor {
-background-color: #004a99;
-color:black;
-display: block;
-margin:0px;
-padding:0px;
-width: 100%;
-height: auto;
+    background-color:$why-choose-us-bg;
+    color:black;
+    display: block;
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    height: auto;
 }   
 #why-us .section-header {
+    font-family: $titulos;
     font-weight: 800;
     text-align: center;
     margin: auto;
@@ -21,10 +22,15 @@ height: auto;
     height: auto;
     display: block;
 }
+#why-us .card .card-body i {
+    font-size: 48px;
+    padding-top: 15px;
+    color: $cards-bg;
+}
 #why-us h3 {
+    font-family: $titulos;
     text-align: center;
     font-size: 40px;
-    font-display: block;
 }
 #why-us p {
     padding: 0px;
@@ -61,21 +67,22 @@ height: auto;
     display: inline-block;
     border-bottom: #00458f solid 2px;
     text-decoration: none;
-  }
- 
+}
 #why-us .card-title {
+    font-family: $titulos;
     font-size: 25px;
     justify-content: center;
     color: rgb(10, 10, 10);
 }
 #why-us .card-text {
+    font-family: $titulos;    
     font-size: 16px;
     justify-content: center;
     color: rgb(12, 12, 12);
     display: block;
 }
 #why-us .contador {
-    background-color:  #00458f solid 2px;
+    background-color: $cards-bg;
     border: black solid 3px;
     padding-top: 40px;
     border-radius: 8px;
@@ -95,11 +102,7 @@ height: auto;
     align-items: center;
     background-color: #0f3b69;
 }
-#why-us .card i {
-        font-size: 48px;
-        padding-top: 15px;
-        color: #bfddfe;
-      }
+
 #why-us .contador span {
     font-weight: bold;
     font-size: 48px;
