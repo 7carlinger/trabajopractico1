@@ -1,0 +1,135 @@
+#why-us {
+    padding: 30px 0;
+    background-color:$why-choose-us-bg;
+    display: block;
+}
+#why-us .contenedor {
+    background-color:$why-choose-us-bg;
+    color:black;
+    display: block;
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    height: auto;
+}   
+#why-us .section-header {
+    font-family: $titulos;
+    font-weight: 800;
+    text-align: center;
+    margin: auto;
+    color: #ffff;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#why-us .card .card-body i {
+    font-size: 48px;
+    padding-top: 15px;
+    color: $cards-bg;
+}
+#why-us h3 {
+    font-family: $titulos;
+    text-align: center;
+    font-size: 40px;
+}
+#why-us p {
+    padding: 0px;
+    margin: 0 0 30px 0;
+    font-size: 16px;
+}
+#why-us .choose {
+    background-color:#115cad;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    max-width: 100%;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#why-us .card-holder {
+    margin: 20px;
+    display: flex;
+    background-color: #05488f;
+    color: black;
+    border-radius: 8px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+#why-us .card a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    border-bottom: #00458f solid 2px;
+    text-decoration: none;
+}
+#why-us .card-title {
+    font-family: $titulos;
+    font-size: 25px;
+    justify-content: center;
+    color: rgb(10, 10, 10);
+}
+#why-us .card-text {
+    font-family: $titulos;    
+    font-size: 16px;
+    justify-content: center;
+    color: rgb(12, 12, 12);
+    display: block;
+}
+#why-us .contador {
+    background-color: $cards-bg;
+    border: black solid 3px;
+    padding-top: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+}
+#why-us .card-body {
+    padding-top: 15px;
+    align-items: center;
+}
+#why-us .lastcard-body {
+    padding-top: 15px;
+    align-items: center;
+    background-color: #0f3b69;
+}
+
+#why-us .contador span {
+    font-weight: bold;
+    font-size: 48px;
+    display: block;
+    color: #fff;
+}
+#why-us .contador p {
+    font-weight: 500px;
+    font-size: 16px;
+    display: inline-block;
+    color: black;
+}
+#why-us .columnas { 
+    border: 5px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 50%;
+    height: auto;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    width:22%;
+}
+#why-us .cuenta-numeros {
+  font-weight: bold;
+  font-size: 48px;
+  display: block;
+  color: #fff;
+  width: 100%;
+}

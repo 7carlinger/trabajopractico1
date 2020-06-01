@@ -1,0 +1,90 @@
+#portfolio {
+  padding: 0px;
+  margin:0px;
+  display: block;
+  position: absolute;
+}
+#portfolio .container {
+  margin:0px;
+  background-color: rgb(241, 239, 239);
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  display: block;
+  margin-right: -15px;
+  text-align: center;
+  }
+#portfolio .portfolio-imagenes {
+    border-radius: 8px;
+    background-color: rgb(252, 248, 228);
+    width: 25%;
+    height: 330px;
+    padding: 10px;
+    position: relative;
+}
+#portfolio .cards-container {
+  background-color: rgb(180, 179, 179);
+  border-bottom: 10px;
+  border-right:grey dotted 2px; 
+  border-top: grey solid 2px;
+  color:black;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  flex-basis: auto;
+  position: relative;
+}
+
+  #portfolio .portfolio-imagenes {
+  display: inline-block;
+  border-bottom: 10px;
+  border-right:darkgrey solid 2px; 
+  border-top: darkgray solid 2px;
+  width: 310px;
+  margin-left: 5px;
+  margin-top: 5px;
+  align-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+}
+#portfolio ul .lista1 {
+  font-size: 20px;
+  background-color:  rgb(234, 228, 240);
+  border-color: gray solid 3px;
+  border-radius: 30%;
+  color:rgb(52, 50, 165);
+  margin: 15px 15px 15px 15px;
+  display: inline-block;
+  align-items: space-evenly;
+  margin-bottom: 0px;
+  list-style: none;
+  width:10%;
+  height:40%;
+  border-bottom: darkgray solid 3px;
+}
+#portfolio h3 {
+  font-size: 40px;
+}
+#portfolio .portfolio.header {
+  align-items: center;
+  display: block;
+  text-align: center;
+}
+#portfolio .elipses {
+  position: relative;
+  margin-bottom: 30px;
+  height: 50px;
+}
+#portfolio h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  padding-bottom: 0;
+}
+img {
+  max-width: 320px;
+  max-height: 300px;
+}
