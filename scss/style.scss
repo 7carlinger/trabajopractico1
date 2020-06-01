@@ -1,0 +1,24 @@
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@import "./abstract/mixins.scss";
+@import "./abstract/variables.scss";
+@import "./sections/aboutus.scss";
+@import "./sections/services";
+body {
+    margin: 0;
+    background-color: white;
+}
+
+@include mQuery576;
+@include mQuery768;
+@include mQuery992;
+@include mQuery1200;

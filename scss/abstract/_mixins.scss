@@ -1,0 +1,198 @@
+/* mixins loli*/
+
+@mixin display-flex ($x, $y, $direction) {
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+    flex-direction: $direction;
+}
+
+@mixin header-loli {
+    background-color: #fff;
+    @include display-flex(center, center, column);
+    h3 {
+        font-size: 36px;
+        color: #3a3939;
+        font-family: "Montserrat", sans-serif;
+    }
+    p {
+        text-align: center;
+        font-size: 15px;
+        padding-bottom: 60px;
+    }
+}
+
+@mixin cards-button {
+    .title {
+        margin: 0;
+        text-decoration: none;
+        a:link,
+        a:visited,
+        a:active {
+            text-decoration: none;
+        }
+        p.description {
+            margin: -16;
+            line-height: 26px;
+        }
+    }
+}
+
+@mixin mQuery576 {
+    @media (min-width:576px)
+    { .container {
+        max-width: 540px ;
+        }
+
+    }
+}
+@mixin mQuery768 {
+    @media (min-width:768px)
+    {   .container {
+            max-width: 720px ;
+                .section-header p {
+                max-width: 350px;
+                 }
+            } 
+        #services {
+            .cards{
+                flex-wrap: wrap !important;
+                flex-direction: row;
+                .box{
+                    margin-right: 15px;
+                    margin-left: 15px;
+                    max-width: 45%;
+                   }
+                }
+        }     
+    } 
+}
+
+
+
+@mixin mQuery992 {
+    @media (min-width:992px){ 
+    #about {
+        @include display-flex(center,center ,column );
+        .container {
+            max-width: 1200px;
+                margin-left: 0 ;
+                margin-right: 0 ;
+                #container-extra-inverse {
+                    flex-direction: row-reverse;
+                    margin-bottom: 60px;
+                    
+                }
+                .section-header{
+                    p{
+                        max-width: 470px;
+                        text-align: left;
+                    }
+                }
+                .about-extra {
+                    @include display-flex(center,center ,row );
+                    max-width: 1200px !important;
+                    
+                    .img-about {
+                        max-height: 80% !important;
+                        max-width: 450px;
+                    }
+                    .container-extra{
+                        max-width: 450px;
+                        margin: 0 15px 0 15px !important;
+                    }
+                }
+                .about-container {
+                    flex-direction: row-reverse;
+                    
+                    .description{
+                        max-width: 450px;
+                        margin-right: 20px;
+                        .title-icons {
+                            margin-bottom: 30px ;
+                            .container-icon{
+                                @include display-flex(center,center ,row )
+                            }
+                        }
+                        .icon{
+                            width: 64px;
+                            height: 64px;
+                        }
+                        
+                        .text-about{
+                            .title{
+                                font-size: 18px;
+                            }
+                            p{
+                                font-size: 14px;
+                                margin: 0;
+                            }
+                        }
+                    }
+                    .img-about{
+                        align-items: flex-start;
+                        max-width: 450px;
+                    }
+                }
+        }
+    }
+    
+    #services {    
+        .container{ 
+            max-width: 960px;
+            .cards{
+                max-width: 900px;
+                flex-wrap: wrap ;
+                flex-direction: row ;
+                .box{
+                    margin-right: 15px ;
+                    margin-left: 15px ;
+                    max-width: 350px;
+                   }
+                }
+        }        
+        
+        
+    }
+}
+}              
+      
+
+@mixin mQuery1200 {
+    @media (min-width:1200px){
+        #about{
+            @include display-flex(center,center ,column);
+            .container {
+            @include display-flex(center,center ,column);
+            max-width: 1300px ;
+                .description{
+                max-width: 550px;
+                }
+                .img-about{
+                 max-width: 500px;
+                }
+                .section-header p {
+                    max-width: 650px;
+                }
+                .about-extra{
+                    flex-wrap: wrap;
+                    max-width: 1400px;
+                    .container-extra {
+                        max-width: 500px;
+
+                    }
+                }
+            }
+        }
+        #services {
+            .container{
+                .cards {
+                    max-width: 1100px;
+                    .box{
+                        max-width: 425px;
+                    }
+                }
+            }
+        }
+    }
+}
