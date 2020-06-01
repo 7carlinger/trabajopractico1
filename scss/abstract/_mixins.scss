@@ -1,0 +1,6 @@
+///////////// mixins footer ////////////
+@mixin footer-media ($max-width) {
+    display: block;
+    max-width: $max-width;
+    padding-right: 20px;
+}
