@@ -1,4 +1,15 @@
 
+@import "../scss/sections/header.scss";
+@import "../scss/sections/hero.scss";
+
+body {
+    margin: 0px;
+    background: #fff;
+    color: #444;
+    font-family: "Open Sans", sans-serif; 
+}
+
+
 h1,
 h2,
 h3,
@@ -34,6 +45,5 @@ body {
 @import "./sections/footer";
 @import "./abstract/mixins";
 
-body {
-    margin: 0;
-}
+
+
