@@ -1,0 +1,163 @@
+// cambios generales, mobile first //
+@import "../abstract/mixins";
+
+footer {
+    background-color: $why-choose-us-bg;
+    color: $blanco;
+    font-family: $titulos; 
+    margin: 0;
+    padding: 0;
+    h3 {
+        text-transform: uppercase;
+        font-size: medium;
+        font-weight: bold;
+        margin: 30px 0 30px;
+    }
+    .footer-contenido {
+        padding: 60px $size-repeat 0;
+    }
+    .primera-parte {
+        h2 {
+            font-weight: lighter;
+            letter-spacing: 0.2em;
+            font-size: xx-large;
+        }
+    }
+    .segunda-parte {
+        .links-page {
+            a {
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                color: $blanco;
+                margin: $size-repeat 0 30px;
+            }
+        }
+    }
+    .tercera-parte {
+        p {
+            margin: 10px 0 10px; 
+        }
+        .logo-redsocial {
+            margin: 25px 0 25px;
+            .logo {
+                text-align: center;
+                font-size: 19px;
+                line-height: 2;
+                padding: 2px 2px;
+                margin-right: 8px;
+                display: inline-block;
+                border-radius: 50%;
+                height: 35px;
+                width: 35px;
+                background-color: $celeste;
+                color: $blanco;
+
+            }
+        }
+    }
+    .cuarta-parte {
+        form {
+            display: flex;
+            input {
+                width: 90%;
+                height: 25px;
+            }
+            button {
+                width: 150px;
+                border: none;
+                background-color: $celeste;
+                color: $blanco;
+            }
+        }
+    }
+    .parte-final { //Parte copyright
+        height: 100px;
+        background-color: $azul;
+        p {
+            padding: 30px 80px 10px 80px; 
+        }
+    }
+    .chebron { 
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+        .fa-chevron-circle-up {
+            color: $celeste;
+            font-size: 50px;
+        }
+    }
+    @media (min-width: 576px) {
+        .footer-contenido {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 750px;
+            margin-left: 55px;
+            .primera-parte {
+                flex: $flex-position-repeat;
+                p {
+                    padding-right: 15px; 
+                }
+            }
+            .segunda-parte {
+                flex: $flex-position-repeat;
+            }
+            .tercera-parte {
+                flex: $flex-position-repeat;
+            }
+            .cuarta-parte {
+                flex: $flex-position-repeat;
+            }
+        }
+    }
+    @media (min-width: 992px) {
+        .footer-contenido {
+                max-width: 960px;
+                flex-wrap: nowrap;
+                padding: 15px;
+                margin: 0;
+                .primera-parte {
+                    @include footer-media ($max-width: 300px);
+                    p {
+                        padding-right: 0; 
+                    } 
+                }
+                .segunda-parte {
+                    @include footer-media ($max-width:200px);
+                }
+                .tercera-parte {
+                    @include footer-media ($max-width:200px);
+                }
+                .cuarta-parte {
+                    @include footer-media ($max-width:200px);
+            }
+        }
+        .parte-final {
+            display: flex;
+            justify-content: center;
+        }
+        .chebron {
+            bottom: 350px;
+        }
+    }
+    @media (min-width: 1040px) {
+        font-size: 14px; 
+        .footer-contenido {
+            max-width: none;
+            justify-content: center;
+        }
+    }
+    @media (min-width: 1200px){
+        .footer-contenido {
+            .primera-parte {
+                @include footer-media ($max-width: 335px);
+            }
+            .tercera-parte {
+                @include footer-media ($max-width: 270px);
+            }
+            .cuarta-parte {
+                @include footer-media ($max-width: 240px);
+            }
+        }
+    }
+}

@@ -1,4 +1,102 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
 
 
+#services {
+    background-color: #ecf5ff;
+    padding: 60px 0 40px;
+    @include display-flex(center, center, column);
+    .container {
+        box-sizing: border-box;
+        padding: 0 10px 0 10px;
+    }
+    .section-header {
+        @include header-loli;
+        background-color: #ecf5ff;
+        h3 {
+            font-size: 36px;
+            font-family: "Montserrat", sans-serif;
+            margin-bottom: 25px !important;
+            letter-spacing: 1px;
+            color: #283d50;
+            font-weight: 500;
+        }
+        p {
+            font-size: 15px;
+            font-family: "Open sans", sans-serif;
+            color: #556877;
+            margin: 0 10px 0 10px;
+        }
+    }
+    .cards .box:hover{ 
+            transform: translateY(-5px);
+            h4 a{
+                color:#007bff;
+            }
+    }
+    .cards {
+        @include display-flex(center, center, column);
+        
+    
+    .box {
+        @include display-flex(center, center, row);
+        @include cards-button;
+        position: relative;
+        background: #fff;
+        padding: 30px;
+        overflow: hidden;
+        margin: 0 10px 40px 10px;
+        border-radius: 10px;
+        box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+        transition: all 0.3s ease-in-out;
+        
+        h4 a {
+            color: #111111;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: "Montserrat", sans-serif;
+        }
+        p {
+            color: #444444;
+            font-size: 14px;
+            font-family: "Open Sans", sans-serif;
+            line-height: 25px;
+        }    
+    }
+}
+    .icon-box {
+        width: 100px;
+        font-size: 64px;
+        position: relative;
+        i {
+            position: absolute;
+            left: -44px;
+            top: -40px;
+        }
+    }
+}
 
+.color-pink {
+    color: #ff6e9f;
+}
+
+.color-yellow {
+    color: #f0d356;
+}
+
+.color-cyan {
+    color: #a7e8e5;
+}
+
+.color-green {
+    color: #45d032;
+}
+
+.color-green-ligth {
+    color: #d6ff22;
+}
+
+.color-blue {
+    color: #4680ff;
+}
 

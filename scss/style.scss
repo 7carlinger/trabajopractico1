@@ -1,3 +1,4 @@
+
 @import "../scss/sections/header.scss";
 @import "../scss/sections/hero.scss";
 
@@ -7,3 +8,42 @@ body {
     color: #444;
     font-family: "Open Sans", sans-serif; 
 }
+
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@import "./abstract/mixins.scss";
+@import "./abstract/variables.scss";
+@import "./sections/aboutus.scss";
+@import "./sections/services";
+body {
+    margin: 0;
+    background-color: white;
+}
+
+@include mQuery576;
+@include mQuery768;
+@include mQuery992;
+@include mQuery1200;
+
+
+@import"../scss/sections/whyus";
+@import"../scss/sections/ourportfolio";
+@import"../scss/abstract/variables";
+
+@import "./abstract/variables";
+@import "./sections/contactus";
+@import "./sections/footer";
+@import "./abstract/mixins";
+
+
+
